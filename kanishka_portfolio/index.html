@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanishka Koushal's personal portfolio — Computer Science student, developer and AI/ML enthusiast.">
+  <title>Kanishka Koushal | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">Kanishka<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-inner">
+        <div class="avatar-wrap">
+          <!-- Add your photo in this folder as profile.jpg to replace the initials. -->
+          <img class="profile-photo" src="profile.jpg" alt="Portrait of Kanishka Koushal"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <div class="avatar-fallback" aria-label="Kanishka initials">KK</div>
+          <span class="online-dot" title="Open to opportunities"></span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1>Kanishka <span>Koushal</span></h1>
+          <h2>Computer Science Student <i>·</i> Developer <i>·</i> AI/ML Enthusiast</h2>
+          <p class="intro">I enjoy turning ideas into useful digital experiences. I’m currently strengthening my foundations in software development, problem-solving and machine learning while building projects that help me learn by doing.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+            <a class="button button-outline" href="#contact">Get in touch</a>
+          </div>
+          <div class="quick-meta"><span>📍 Indore, India</span><span>🎓 CSE · 3rd Year</span></div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div class="section-heading">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>Curious mind.<br><span>Builder's mindset.</span></h2>
+        </div>
+        <div class="about-content">
+          <p>I’m a Computer Science and Engineering student at IIST, Indore. I like exploring how technology works and using what I learn to create practical applications.</p>
+          <p>My current interests include artificial intelligence, machine learning, web development and data structures. Outside academics, I enjoy skating and getting lost in crime podcasts and series.</p>
+          <div class="goal-card"><span class="goal-icon">✦</span><div><strong>My career goal</strong><p>To grow into a skilled software / AI-ML engineer, contribute to meaningful products and keep learning through real-world challenges.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="education">
+      <div class="container">
+        <div class="section-title"><p class="eyebrow">MY BACKGROUND</p><h2>Education</h2><p>The academic path I'm building on.</p></div>
+        <div class="education-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-main">
+            <div class="edu-top"><div><h3>Bachelor of Technology — Computer Science & Engineering</h3><p>IIST, Indore, Madhya Pradesh</p></div><span class="date-pill">Expected 2028</span></div>
+            <p class="edu-note">Currently in 3rd year · Learning software development, core computer science and AI/ML.</p>
+          </div>
+        </div>
+        <p class="small-note">Add your school names, 10th/12th qualifications and passing years here if your assignment requires them.</p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-title"><p class="eyebrow">WHAT I WORK WITH</p><h2>Skills & tools</h2><p>A growing toolkit — built one concept and project at a time.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><span class="skill-symbol">⌘</span><h3>Programming</h3><div class="chips"><span>Python</span><span>C</span><span>DSA</span></div></article>
+          <article class="skill-card"><span class="skill-symbol">⌁</span><h3>Web development</h3><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>FastAPI</span></div></article>
+          <article class="skill-card"><span class="skill-symbol">✳</span><h3>AI & data</h3><div class="chips"><span>Machine Learning</span><span>NumPy</span><span>Pandas</span><span>scikit-learn</span></div></article>
+          <article class="skill-card"><span class="skill-symbol">⌘</span><h3>Developer tools</h3><div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="projects">
+      <div class="container">
+        <div class="section-title"><p class="eyebrow">THINGS I'VE BUILT</p><h2>Featured projects</h2><p>Academic and personal work that reflects what I'm learning.</p></div>
+        <div class="projects-grid">
+          <article class="project-card project-blue"><div class="project-top"><span class="project-number">01</span><span class="project-tag">Web · AI</span></div><h3>PinGenius</h3><p>An image-gallery project with upload and display functionality, built with FastAPI. Exploring how machine learning can make visual discovery smarter.</p><div class="project-stack"><span>Python</span><span>FastAPI</span><span>HTML/CSS</span></div><a href="https://github.com/" target="_blank" rel="noreferrer">View on GitHub ↗</a></article>
+          <article class="project-card project-lilac"><div class="project-top"><span class="project-number">02</span><span class="project-tag">AI · Media</span></div><h3>DubVerse</h3><p>A project concept focused on making video content more accessible through an AI-assisted dubbing workflow.</p><div class="project-stack"><span>Python</span><span>AI/ML</span><span>Web</span></div><a href="https://github.com/" target="_blank" rel="noreferrer">View on GitHub ↗</a></article>
+          <article class="project-card project-mint"><div class="project-top"><span class="project-number">03</span><span class="project-tag">NLP · SIH</span></div><h3>SIF Safety Analysis</h3><p>An AI/NLP project exploring how unsafe-act, unsafe-condition and near-miss reports can help identify serious-injury and fatality precursors.</p><div class="project-stack"><span>Python</span><span>NLP</span><span>FastAPI</span></div><a href="https://github.com/" target="_blank" rel="noreferrer">View on GitHub ↗</a></article>
+        </div>
+        <p class="small-note">Replace the sample GitHub links above with the exact repository links for your projects.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-inner">
+        <div><p class="eyebrow">LET'S CONNECT</p><h2>Have an idea or opportunity?<br><span>I'd love to hear from you.</span></h2><p class="contact-copy">Feel free to reach out for collaborations, internships or just a friendly tech conversation.</p></div>
+        <div class="contact-card">
+          <a href="mailto:koushalkanishka74@gmail.com"><span>✉</span><div><small>Email</small><strong>koushalkanishka74@gmail.com</strong></div><b>↗</b></a>
+          <a href="https://github.com/kkanishka06" target="_blank" rel="noreferrer"><span>⌘</span><div><small>GitHub</small><strong>github.com/kkanishka06</strong></div><b>↗</b></a>
+          <a href="https://www.linkedin.com/in/kanishka-koushal-05a05532b/" target="_blank" rel="noreferrer"><span>in</span><div><small>LinkedIn</small><strong>linkedin.com/in/kanishka-koushal-05a05532b</strong></div><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><a class="brand" href="#home">Kanishka<span>.</span></a><p>Designed & built with curiosity. © <span id="year"></span> Kanishka Koushal</p><a href="#home" class="back-top">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
